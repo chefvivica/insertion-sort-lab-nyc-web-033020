@@ -7,15 +7,18 @@ function findMinAndRemove(array){
       index = i
     }
   } array.splice(index, 1)
-  return array[index]
+  return min
 }
 
-// function selectionSort(array){
-//   let sorted = []
-//   let min
-//   while(array.length){
-//     min = findMinAndRemove(array)
-//     sorted.push(min)
-//   }
-//   return sorted
-// }
+
+
+
+function selectionSort(array){
+  let sorted = []
+  let min
+  while(array.length){
+    min = findMinAndRemove(array)
+    sorted.push(min)
+  }
+  return sorted
+}
