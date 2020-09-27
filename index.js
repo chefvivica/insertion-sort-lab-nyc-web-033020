@@ -6,15 +6,16 @@ function findMinAndRemove(array){
       min = array[i]
       index = i
     }
-  }return array.splice(index, 1)
+  } array.splice(index, 1)
+  return array[index]
 }
 
-function selectionSort(array){
-  let sorted = []
-  let min
-  while(array.length){
-    min = findMinAndRemove(array)
-    sorted.push(min)
-  }
-  return sorted
-}
+// function selectionSort(array){
+//   let sorted = []
+//   let min
+//   while(array.length){
+//     min = findMinAndRemove(array)
+//     sorted.push(min)
+//   }
+//   return sorted
+// }
