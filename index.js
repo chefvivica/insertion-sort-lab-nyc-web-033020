@@ -11,8 +11,9 @@ function findMinAndRemove(array){
 
 function selectionSort(array){
   let sorted = []
+  let min
   while(array.length){
-    let min = findMinAndRemove(array)
+    min = findMinAndRemove(array)
     sorted.push(min)
   }
   return sorted
